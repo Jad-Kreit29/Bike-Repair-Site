@@ -1,12 +1,34 @@
 import React from 'react'
+import { Route, createBrowserRouter, createRoutesFromElements, RouterProvider } from 'react-router-dom'
+import MainLayout from './layouts/MainLayout'
+import Homepage from './pages/Homepage'
+
+
+const router = createBrowserRouter(
+
+  createRoutesFromElements(
+
+    <Route path='/' element={<MainLayout />}>
+
+      <Route index element={<Homepage />} />
+
+
+    </Route>
+
+
+  )
+
+
+)
+
 
 const App = () => {
   return (
 
-    <div>
-      Nothing to see here yet Maxim!
-      <br></br>
-      <p className='text-[10px]'>And yes, I know you're seeing this Maxim 😈</p>
+    <div className='antialiased'>
+
+      <RouterProvider router={ router }/>
+
     </div>
 
   )
