@@ -139,7 +139,7 @@ function AppointmentPage() {
   }
 
   return (
-    <div className="flex justify-center items-start min-h-screen bg-[#EFDECD] p-8">
+    <div className="flex justify-center items-start min-h-screen bg-slate-600 p-8">
       {/* Form container */}
       <Form {...form}>
         <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4 bg-[#2A3439] p-6 rounded-lg w-full max-w-md text-white">
