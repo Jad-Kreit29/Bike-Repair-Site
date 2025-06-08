@@ -5,7 +5,7 @@ import Logo from '../images/logo.svg'
 const NavBar = () => {
   return (
 
-    <nav className='bg-[#22333B] text-white text-lg font-mono px-4 py-2 border-b-4 border-[#01161E] sticky top-0 z-1'>
+    <nav className='bg-[#22333B] text-white text-lg font-mono px-4 py-2 border-b-4 border-[#01161E]'>
 
       <div className='flex space-x-10 items-center-safe'>
 
