@@ -16,7 +16,6 @@ const router = createBrowserRouter(
       <Route path='/status' element={<OrderStatusPage />} />
       <Route path='/appointment_book' element={<AppointmentPage />}  />
 
-
     </Route>
 
 
