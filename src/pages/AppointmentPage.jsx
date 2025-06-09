@@ -175,7 +175,7 @@ function AppointmentPage() {
                       <Button
                         variant={"outline"}
                         className={cn(
-                          "w-full justify-start text-left font-normal bg-white text-black",
+                          "w-full justify-start text-left font-normal bg-white text-black font-lato",
                           !field.value && "text-muted-foreground"
                         )}
                         // This onClick primarily triggers the popover to open.
@@ -222,7 +222,7 @@ function AppointmentPage() {
                 {form.formState.errors.appointmentDate && (
                     <FormMessage>{form.formState.errors.appointmentDate.message}</FormMessage>
                 )}
-                <span className="text-sm text-gray-400">MM/DD/YYYY</span>
+                <span className="text-sm text-gray-400 font-lato">MM/DD/YYYY</span>
               </FormItem>
             )}
           />
@@ -235,7 +235,7 @@ function AppointmentPage() {
               <FormItem>
                 <FormLabel>Name</FormLabel>
                 <FormControl>
-                  <Input placeholder="John Doe" {...field} className="bg-white text-black"/>
+                  <Input placeholder="John Doe" {...field} className="bg-white text-black font-lato"/>
                 </FormControl>
                 <FormMessage />
               </FormItem>
@@ -250,7 +250,7 @@ function AppointmentPage() {
               <FormItem>
                 <FormLabel>Email</FormLabel>
                 <FormControl>
-                  <Input type="email" placeholder="john@example.com" {...field} className="bg-white text-black"/>
+                  <Input type="email" placeholder="john@example.com" {...field} className="bg-white text-black font-lato"/>
                 </FormControl>
                 <FormMessage />
               </FormItem>
@@ -265,7 +265,7 @@ function AppointmentPage() {
               <FormItem>
                 <FormLabel>Phone Number</FormLabel>
                 <FormControl>
-                  <Input type="tel" placeholder="(555) 123-4567" {...field} className="bg-white text-black"/>
+                  <Input type="tel" placeholder="(555) 123-4567" {...field} className="bg-white text-black font-lato"/>
                 </FormControl>
                 {/* Display specific error message for phone field */}
                 {form.formState.errors.phone && (
@@ -284,11 +284,11 @@ function AppointmentPage() {
                 <FormLabel>Service Type</FormLabel>
                 <Select onValueChange={field.onChange} defaultValue={field.value}>
                   <FormControl>
-                    <SelectTrigger className="bg-white text-black">
+                    <SelectTrigger className="bg-white text-black font-lato">
                       <SelectValue placeholder="Select a service" />
                     </SelectTrigger>
                   </FormControl>
-                  <SelectContent className="bg-white text-black">
+                  <SelectContent className="bg-white text-black font-lato">
                     <SelectItem value="tuneup">Tune-Up</SelectItem>
                     <SelectItem value="repair">Repair</SelectItem>
                     <SelectItem value="custom">Custom Build</SelectItem>
@@ -308,11 +308,11 @@ function AppointmentPage() {
                 <FormLabel>Time</FormLabel>
                 <Select onValueChange={field.onChange} defaultValue={field.value}>
                   <FormControl>
-                    <SelectTrigger className="bg-white text-black">
+                    <SelectTrigger className="bg-white text-black font-lato">
                       <SelectValue placeholder="Pick a time slot" />
                     </SelectTrigger>
                   </FormControl>
-                  <SelectContent className="bg-white text-black">
+                  <SelectContent className="bg-white text-black font-lato">
                     <SelectItem value="9am">9:00 AM</SelectItem>
                     <SelectItem value="11am">11:00 AM</SelectItem>
                     <SelectItem value="1pm">1:00 PM</SelectItem>
@@ -331,7 +331,7 @@ function AppointmentPage() {
               <FormItem>
                 <FormLabel>Notes</FormLabel>
                 <FormControl>
-                  <Textarea placeholder="Extra info..." {...field} className="bg-white text-black"/>
+                  <Textarea placeholder="Extra info..." {...field} className="bg-white text-black font-lato"/>
                 </FormControl>
                 <FormMessage />
               </FormItem>
@@ -341,7 +341,7 @@ function AppointmentPage() {
           {/* Submit Button */}
           <Button
             type="submit"
-            className="w-full bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-2 px-4 rounded"
+            className="w-full bg-yellow-500 hover:bg-yellow-600 text-white font-josefin font-extrabold py-2 px-4 rounded"
             disabled={form.formState.isSubmitting}
           >
             {form.formState.isSubmitting ? "Submitting..." : "Submit"}

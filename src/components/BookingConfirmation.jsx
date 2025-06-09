@@ -38,7 +38,7 @@ function BookingConfirmation({ bookingDetails }) {
       </div>
       <h2 className="text-4xl font-bold mb-4">Booking confirmed!</h2>
       <p className="text-lg mb-6">
-        You will receive an email shortly with the booking information. Thank you for choosing Bikemate.
+        You will receive an email shortly with the booking information. Thank you for choosing Bikety.
       </p>
 
       {/* Display Booking Information */}
