@@ -1,6 +1,6 @@
 # Bike Repair Service Site (_Bikety_)
 
-This is a website designed for a fictional bike repair shop as part of the **SEG 3125: Analysis and Design of User Interfaces 20255** course!
+This is a website designed for a fictional bike repair shop as part of the **SEG 3125: Analysis and Design of User Interfaces 2025** course!
 
 🚀 Built with:
 
